@@ -1,6 +1,6 @@
 # compose
 
-[![travis](https://img.shields.io/travis/piecioshka/compose.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/compose)
+[![travis](https://img.shields.io/travis/piecioshka/compose.svg)](https://travis-ci.org/piecioshka/compose)
 [![dependencies](https://david-dm.org/piecioshka/compose.svg)](https://github.com/piecioshka/compose)
 [![codecov](https://codecov.io/gh/piecioshka/compose/branch/master/graph/badge.svg)](https://codecov.io/gh/piecioshka/compose)
 
