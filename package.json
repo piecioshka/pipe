@@ -14,15 +14,14 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "mocha",
         "test:watch": "mocha --watch",
-        "coverage": "nyc npm run test && nyc report --reporter=html",
-        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "coverage": "nyc npm run test && nyc report --reporter=text-lvoc | coveralls -v",
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
         "lint": "eslint ."
     },
     "dependencies": {},
     "devDependencies": {
         "chai": "^4.2.0",
-        "codecov": "^3.1.0",
+        "coveralls": "^3.0.3",
         "eslint": "^5.11.0",
         "eslint-config-piecioshka": "^2.0.1",
         "mocha": "^5.2.0",

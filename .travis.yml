@@ -4,7 +4,12 @@ os:
   - osx
   - windows
 node_js:
+  - "12"
+  - "11"
+  - "10"
   - "10"
   - "9"
   - "8"
   - "7"
+after_script:
+  - npm run coverage
