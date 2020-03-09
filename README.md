@@ -1,7 +1,6 @@
 # compose
 
 [![travis](https://img.shields.io/travis/piecioshka/compose.svg)](https://travis-ci.org/piecioshka/compose)
-[![dependencies](https://david-dm.org/piecioshka/compose.svg)](https://github.com/piecioshka/compose)
 [![coveralls](https://coveralls.io/repos/github/piecioshka/compose/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/compose?branch=master)
 
 :hammer: Simple helper for composition. Similar to `pipe` from RxJS.
