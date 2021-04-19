@@ -13,12 +13,11 @@
 
 ```javascript
 const compose = require('@piecioshka/compose');
-const what = compose(
-    () => 2,
+const fn = compose(
     (v) => v + 1,
     (v) => v * 10
 );
-console.assert(what, 30); // true
+console.assert(fn(2), 30); // true
 ```
 
 ## Unit tests

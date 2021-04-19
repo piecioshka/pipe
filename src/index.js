@@ -12,5 +12,5 @@ module.exports = function compose(...fnList) {
         return handle(result);
     }
 
-    return handle();
+    return handle;
 };
