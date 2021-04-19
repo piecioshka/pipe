@@ -1,7 +1,7 @@
-# compose
+# pipe
 
-[![travis](https://img.shields.io/travis/piecioshka/compose.svg)](https://travis-ci.org/piecioshka/compose)
-[![coveralls](https://coveralls.io/repos/github/piecioshka/compose/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/compose?branch=master)
+[![travis](https://img.shields.io/travis/piecioshka/pipe.svg)](https://travis-ci.org/piecioshka/pipe)
+[![coveralls](https://coveralls.io/repos/github/piecioshka/pipe/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/pipe?branch=master)
 
 :hammer: Simple helper for composition. Similar to `pipe` from RxJS.
 
@@ -12,8 +12,8 @@
 ## Usage
 
 ```javascript
-const compose = require('@piecioshka/compose');
-const fn = compose(
+const pipe = require('@piecioshka/pipe');
+const fn = pipe(
     (v) => v + 1,
     (v) => v * 10
 );

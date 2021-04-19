@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "compose",
+    "name": "pipe",
     "description": "",
     "version": "1.0.0",
     "license": "MIT",
@@ -29,6 +29,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/compose.git"
+        "url": "git@github.com:piecioshka/pipe.git"
     }
 }

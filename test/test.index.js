@@ -1,22 +1,22 @@
 'use strict';
 
-const compose = require('../src');
+const pipe = require('../src');
 const { assert, expect } = require('chai');
 
 it('is a function', () => {
-    assert.typeOf(compose, 'function');
+    assert.typeOf(pipe, 'function');
 });
 
 it('is expected only function', () => {
     expect(() => {
-        const fn = compose(
+        const fn = pipe(
             []
         );
         fn()
     }).throw(TypeError);
 
     expect(() => {
-        const fn = compose(
+        const fn = pipe(
             Function,
             () => null
         );
@@ -25,7 +25,7 @@ it('is expected only function', () => {
 });
 
 it('should returns null at default', () => {
-    const fn = compose();
+    const fn = pipe();
     assert.typeOf(fn(), 'null');
 });
 
@@ -38,7 +38,7 @@ it('is run all functions', () => {
         index++;
         index++;
     }
-    const fn = compose(
+    const fn = pipe(
         a,
         b
     );
@@ -49,7 +49,7 @@ it('is run all functions', () => {
 it('should return last value', () => {
     const plusOne = (v) => v + 1;
     const multiplyBy10 = (v) => v * 10;
-    const fn = compose(
+    const fn = pipe(
         plusOne,
         multiplyBy10
     );

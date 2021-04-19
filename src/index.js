@@ -1,4 +1,4 @@
-module.exports = function compose(...fnList) {
+module.exports = function pipe(...fnList) {
     const iterator = fnList[Symbol.iterator]();
     let result = null;
 
