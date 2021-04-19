@@ -12,7 +12,6 @@
 ## Usage
 
 ```javascript
-const pipe = require('@piecioshka/pipe');
 const fn = pipe(
     (v) => v + 1,
     (v) => v * 10
@@ -24,12 +23,6 @@ console.assert(fn(2), 30); // true
 
 ```bash
 npm test
-```
-
-## Code coverage
-
-```bash
-npm run coverage
 ```
 
 ## License
