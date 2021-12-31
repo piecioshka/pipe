@@ -14,8 +14,8 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "mocha --sort",
         "test:watch": "mocha --watch",
-        "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
-        "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
         "lint": "eslint ."
     },
     "devDependencies": {
