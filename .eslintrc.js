@@ -16,7 +16,7 @@ module.exports = {
 
     // http://eslint.org/docs/rules/
     rules: {
-        'curly': 'off',
+        curly: 'off',
         'require-jsdoc': 'off',
         'no-console': 'off'
     },
