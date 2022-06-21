@@ -15,12 +15,10 @@
         "test": "mocha --sort",
         "test:watch": "mocha --watch",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
         "lint": "eslint ."
     },
     "devDependencies": {
         "chai": "^4.3.4",
-        "coveralls": "^3.1.1",
         "eslint": "^8.5.0",
         "eslint-config-piecioshka": "^2.0.4",
         "mocha": "^9.1.3",
