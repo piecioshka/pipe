@@ -1,7 +1,5 @@
 # pipe
 
-[![travis-ci](https://api.travis-ci.com/piecioshka/pipe.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/pipe)
-
 :hammer: Simple helper for composition. Similar to `pipe` from RxJS.
 
 ## Features
