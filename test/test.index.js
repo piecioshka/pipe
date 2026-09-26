@@ -55,3 +55,15 @@ it('should return last value', () => {
     );
     assert.equal(fn(2), 30);
 });
+
+it('should work on every call, not only the first one', () => {
+    const plusOne = (v) => v + 1;
+    const multiplyBy10 = (v) => v * 10;
+    const fn = pipe(
+        plusOne,
+        multiplyBy10
+    );
+    assert.equal(fn(2), 30);
+    assert.equal(fn(5), 60);
+    assert.equal(fn(7), 80);
+});
